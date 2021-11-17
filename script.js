@@ -33,7 +33,9 @@ const loadEvent = function() {
     // console.log(generateArray(15e3)); // hehe
 
     const root = document.getElementById("root");
-    const list = generateArray(1e4);
+    const list = generateArray(1e2);
+
+    // const length = 
 
     if (list[0] !== "error") {
         for (const item of list) {
@@ -46,12 +48,12 @@ window.addEventListener("load", loadEvent);
 
 /* 
 window.addEventListener("load", function() {
-    ez is ugyanaz kb, mint a fönti, ált a loadEventet nem akarjuk többször meghívni
+    ez is ugyanaz kb, mint a fenti, ált a loadEventet nem akarjuk többször meghívni
 });
 */
 
 /* 
 window.addEventListener("load", () => {
-    ez is ugyanaz kb, mint a fönti, ált a loadEventet nem akarjuk többször meghívni
+    ez is ugyanaz kb, mint a fenti, ált a loadEventet nem akarjuk többször meghívni
 });
 */

@@ -18,6 +18,7 @@ select{appearance: none !important;
 /* end of css reset */
 
 #root {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap; 
     /* így nem megy 100vw-n túl a tartalom */
@@ -25,4 +26,40 @@ select{appearance: none !important;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    /* column-rule-style: solid; */
+    gap: 10px;
+}
+
+/* plusz feladat */
+
+#root div {
+    display: flex;
+    align-items: center;
+    flex-basis: 200px;
+    height: 200px;
+
+    border-radius: 5%;
+
+    /* text-align: center; */
+
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+
+    background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+    color: rgb(156, 226, 43);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px rgba(167, 194, 49, 0.5);
+    
+    transition: text-shadow 1s linear, box-shadow 1s linear, color 1s linear, border-radius 1s linear;
+}
+
+#root div:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    color: rgb(43, 76, 226);
+    text-shadow: -3px -3px rgba(0, 0, 0, 0.5);
+    box-shadow: -3px -3px rgba(167, 194, 49, 0.5);
 }
