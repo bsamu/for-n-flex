@@ -159,7 +159,6 @@ const generateArray = function(amount) {
     }
 
     if (!Number.isNaN(amount)) {
-
         for (let i = 0; i < amount; i++) {
             const currentLength = i.toString().length;
             const noOfZeros = lengthOfInput - currentLength;
