@@ -12,7 +12,15 @@ const generateArray = function(amount) {
     if (!Number.isNaN(amount)) {
         //console.log("Az amount egy szám.");
         for (let i = 0; i < amount; i++) {
-            returnArray.push(`${i}`);
+            if (i > 999) {
+                returnArray.push(`${i}`);
+            } else if (i > 99) {
+                returnArray.push(`0${i}`);
+            } else if (i > 9) {
+                returnArray.push(`00${i}`);
+            } else {
+                returnArray.push(`000${i}`);
+            }
         }
     } else {
         // console.log("Az amount NEM egy szám.");
@@ -33,7 +41,7 @@ const loadEvent = function() {
     // console.log(generateArray(15e3)); // hehe
 
     const root = document.getElementById("root");
-    const list = generateArray(1e2);
+    const list = generateArray(1e3);
 
     // const length = 
 
