@@ -12,6 +12,7 @@ const generateArray = function(amount) {
 
     if (!Number.isNaN(amount)) {
         //console.log("Az amount egy szám.");
+        //lowBudget verzió
         for (let i = 0; i < amount; i++) {
             if (i > 1000) {
                 returnArray.push(`${i}`);
@@ -52,7 +53,36 @@ const loadEvent = function() {
     }
 }
 
-const input = 100;
+// const input = 100;
+// let lengthOfInput = input.toString().length;
+// console.log(lengthOfInput);
+
+// const generateArray = function(amount) {
+//     let returnArray = [];
+
+//     amount = parseInt(amount);
+
+//     if (amount % 10) {
+//         lengthOfInput = lengthOfInput;
+//         console.log(lengthOfInput);
+//     } else {
+//         lengthOfInput = lengthOfInput - 1;
+//         console.log(lengthOfInput);
+//     }
+
+//     if (!Number.isNaN(amount)) {
+//         for (let i = 0; i < amount; i++) {
+//             let j = i.toString().padStart(lengthOfInput, "0");
+//                 returnArray.push(`${j}`);
+//         }
+//     } else {
+//         returnArray.push("error");
+//     }
+
+//     return returnArray;
+// }
+
+const input = 1000;
 let lengthOfInput = input.toString().length;
 console.log(lengthOfInput);
 
@@ -70,9 +100,24 @@ const generateArray = function(amount) {
     }
 
     if (!Number.isNaN(amount)) {
+
+        // már tanult módszerekkel
         for (let i = 0; i < amount; i++) {
-            let j = i.toString().padStart(lengthOfInput, "0");
-                returnArray.push(`${j}`);
+            // const j = i.toString().padStart(lengthOfInput, "0");
+            const currentLength = i.toString().length;
+            const noOfZeros = lengthOfInput - currentLength;
+            const zeros = "0".repeat(noOfZeros);
+            // const iInString = zeros + i;
+            // const iInNum = parseInt(iInString);
+
+            // console.log(typeof iInString);
+            // console.log(typeof iInNum);
+            // console.log(iInNum);
+            // console.log(iInString);
+            // console.log(zeros);
+            // console.log(noOfZeros);
+            // console.log(currentLength);
+                returnArray.push(`${zeros + i}`);
         }
     } else {
         returnArray.push("error");
