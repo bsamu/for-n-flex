@@ -1,6 +1,7 @@
-/* 
-
+/*
 //lowBudget verzió
+
+const input = 1000;
 
 const generateArray = function(amount) {
     let returnArray = [];
@@ -60,7 +61,7 @@ const loadEvent = function() {
 
 // ----------------------------------------------------------
 
-// const input = 100;
+// const input = 1000;
 // let lengthOfInput = input.toString().length;
 // console.log(lengthOfInput);
 
@@ -112,7 +113,7 @@ const loadEvent = function() {
 
 //     if (!Number.isNaN(amount)) {
 
-//         
+        
 //         for (let i = 0; i < amount; i++) {
 //             // const j = i.toString().padStart(lengthOfInput, "0");
 //             const currentLength = i.toString().length;
