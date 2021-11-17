@@ -160,13 +160,9 @@ const generateArray = function(amount) {
 
     if (!Number.isNaN(amount)) {
 
-        // már tanult módszerekkel
         for (let i = 0; i < amount; i++) {
             const currentLength = i.toString().length;
             const noOfZeros = lengthOfInput - currentLength;
-            // const zeros = "0".repeat(noOfZeros);
-            // const iInString = zeros + i;
-            // const iInNum = parseInt(iInString);
 
             let element = '';
 
