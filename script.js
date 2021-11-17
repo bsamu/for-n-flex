@@ -67,9 +67,3 @@ const generateArray = function(amount) {
 }
 
 window.addEventListener("load", loadEvent);
-
-if (test % 10) {
-    // does not end with 0
-} else {
-    // ends with 0
-}
