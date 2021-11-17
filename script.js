@@ -33,7 +33,7 @@ const loadEvent = function() {
     // console.log(generateArray(15e3)); // hehe
 
     const root = document.getElementById("root");
-    const list = generateArray(1e3);
+    const list = generateArray(1e4);
 
     if (list[0] !== "error") {
         for (const item of list) {
