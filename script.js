@@ -1,23 +1,3 @@
-const loadEvent = function() {
-    console.log("Az oldal betöltődött.");
-
-    // console.log(generateArray(100));
-    // console.log(generateArray(15));
-    // console.log(generateArray("stringelt kiskutya"));
-    // console.log(generateArray(true));
-    // console.log(generateArray([2, 5]));
-    // console.log(generateArray(15e3)); // hehe
-
-    const root = document.getElementById("root");
-    const list = generateArray(input);
-
-    if (list[0] !== "error") {
-        for (const item of list) {
-            root.insertAdjacentHTML("beforeend", `<div>${item}</div>`)
-        }
-    }
-}
-
 /* 
 const generateArray = function(amount) {
     let returnArray = [];
@@ -51,6 +31,26 @@ const generateArray = function(amount) {
     return returnArray;
 }
 */
+
+const loadEvent = function() {
+    console.log("Az oldal betöltődött.");
+
+    // console.log(generateArray(100));
+    // console.log(generateArray(15));
+    // console.log(generateArray("stringelt kiskutya"));
+    // console.log(generateArray(true));
+    // console.log(generateArray([2, 5]));
+    // console.log(generateArray(15e3)); // hehe
+
+    const root = document.getElementById("root");
+    const list = generateArray(input);
+
+    if (list[0] !== "error") {
+        for (const item of list) {
+            root.insertAdjacentHTML("beforeend", `<div>${item}</div>`)
+        }
+    }
+}
 
 const input = 100;
 let lengthOfInput = input.toString().length;
