@@ -139,6 +139,8 @@ const loadEvent = function() {
 
 // ----------------------------------------------------------
 
+// minden 100% tanult anyag
+
 const input = 1000;
 let lengthOfInput = input.toString().length;
 console.log(lengthOfInput);
