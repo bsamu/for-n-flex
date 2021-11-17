@@ -117,7 +117,7 @@ const generateArray = function(amount) {
             // console.log(zeros);
             // console.log(noOfZeros);
             // console.log(currentLength);
-                returnArray.push(`${zeros + i}`);
+            returnArray.push(`${zeros + i}`);
         }
     } else {
         returnArray.push("error");
