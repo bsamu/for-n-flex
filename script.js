@@ -52,8 +52,8 @@ const generateArray = function(amount) {
 }
 */
 
-const input = 10000;
-var lengthOfInput = input.toString().length;
+const input = 100;
+let lengthOfInput = input.toString().length;
 console.log(lengthOfInput);
 
 const generateArray = function(amount) {
