@@ -62,4 +62,16 @@ select{appearance: none !important;
     color: rgb(43, 76, 226);
     text-shadow: -3px -3px rgba(0, 0, 0, 0.5);
     box-shadow: -3px -3px rgba(167, 194, 49, 0.5);
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-name: x-spin;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes x-spin {
+    0%    { -webkit-transform: rotateX(0deg); }
+    50%   { -webkit-transform: rotateX(180deg); }
+    100%  { -webkit-transform: rotateX(360deg); }
 }
