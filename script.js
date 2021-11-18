@@ -24,7 +24,7 @@ const generateArray = function(amount) {
 // ----------------------------------------------------------
 
 /*
-//lowBudget verzió
+//alpha verzió
 
 const input = 1000;
 
